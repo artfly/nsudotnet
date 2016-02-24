@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sartakov.Nsudotnet.NumberGuesser", "Sartakov.Nsudotnet.NumberGuesser\Sartakov.Nsudotnet.NumberGuesser.csproj", "{28ED8F99-2CE1-4497-83FC-512326F3BD3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28ED8F99-2CE1-4497-83FC-512326F3BD3C}.Debug|x86.ActiveCfg = Debug|x86
+		{28ED8F99-2CE1-4497-83FC-512326F3BD3C}.Debug|x86.Build.0 = Debug|x86
+		{28ED8F99-2CE1-4497-83FC-512326F3BD3C}.Release|x86.ActiveCfg = Release|x86
+		{28ED8F99-2CE1-4497-83FC-512326F3BD3C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
