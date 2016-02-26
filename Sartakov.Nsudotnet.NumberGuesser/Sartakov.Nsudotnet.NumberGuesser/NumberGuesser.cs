@@ -47,10 +47,9 @@ namespace NumberGuesser
 			_start = DateTime.Now;
 			while (!rightAnswer) 
 			{
-				try 
+				input = Console.ReadLine ();
+				if (int.TryParse (input, out guess)) 
 				{
-					input = Console.ReadLine ();
-					guess = int.Parse(input);
 					if (guess == _correct) 
 					{
 						ShowHistory();
@@ -63,14 +62,13 @@ namespace NumberGuesser
 							Console.WriteLine("{0}, {1}", username, _swearings[rand.Next(0, _swearings.Length)]);
 					}
 				}
-				catch (FormatException) 
+				else if (input == "q") 
 				{
-					if (input == "q") {
-						Console.WriteLine ("Oops! Sorry for inconvenience.");
-						return;
-					}
-					Console.WriteLine ("It's not even a number. Try one more time");
+					Console.WriteLine ("Oops! Sorry for inconvenience.");
+					return;
 				}
+				else 
+					Console.WriteLine ("It's not even a number. Try one more time");	
 			}
 		}
 	}
