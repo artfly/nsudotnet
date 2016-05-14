@@ -7,10 +7,10 @@ namespace NumberGuesser
 	public class NumberGuesser
 	{
 		private static readonly string[] _swearings = 
-			new[] {"hahahahaha. Oh wait you’re serious. Let me laugh even harder.",
-			"compare your live to mine and the kill yourself",
-			"some day we''ll be able to look back on this whole thing and laugh...AH HA HA HA!!!",
-			"bite my shiny metal ass!", " Hehe, sucker", "I'm so embarassed, I wish everyone was dead except me!"
+			new[] {"Hahahahaha. Oh wait, {0}, you’re serious. Let me laugh even harder.",
+			"{0}, compare your live to mine and the kill yourself",
+			"{0}, some day we'll be able to look back on this whole thing and laugh...AH HA HA HA!!!",
+			"Bite my shiny metal ass, {0}!", " Hehe, sucker {0}", "{0}, I'm so embarassed, I wish everyone was dead except me!"
 		};
 		private List<int> _attempts = new List<int>();
 
@@ -59,7 +59,7 @@ namespace NumberGuesser
 					{
 						_attempts.Add(guess);
 						if (_attempts.Count % 4 == 0)
-							Console.WriteLine("{0}, {1}", username, _swearings[rand.Next(0, _swearings.Length)]);
+							Console.WriteLine(_swearings[rand.Next(0, _swearings.Length)], username);
 					}
 				}
 				else if (input == "q") 
